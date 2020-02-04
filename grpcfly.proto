@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package GRPCFly;
+
+service GRPCFlyService {
+	rpc Set(SetRequest) returns (SetResponse);
+	rpc Get(GetRequest) returns (GetResponse);
+}
+
+message SetRequest {
+	string key = 1;
+	string value = 2;
+}
+
+
+message SetResponse {
+	bool success=1;
+}
+
+message GetRequest {
+	string key = 1;
+}
+
+
+message GetResponse {
+	bool success=1;
+	string value=2;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "nodegrpc",
+  "version": "1.0.0",
+  "description": "A Node GRPC example",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.5.3",
+    "grpc": "^1.24.2",
+    "redis": "^2.8.0"
+  }
+}
